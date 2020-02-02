@@ -11,6 +11,6 @@ m:    Show the NERD Tree menu<br />
 R:    Refresh the tree, useful if files change outside of Vim<br />
 ?:    Toggle NERD Tree's quick help<br />
 ### tabs
-`:tabnew filename` open new tab<br />
-`:tabm n` move current tab to index n<br />
-`:tabm +-n` move current tab n tabs to the right/left<br />
+`:tabnew filename`	open new tab<br />
+`:tabm n`			move current tab to index n<br />
+`:tabm +-n`			move current tab n tabs to the right/left<br />
