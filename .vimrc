@@ -32,6 +32,9 @@ Plugin 'Lokaltog/powerline-fonts'
 
 " Theme
 Plugin 'lifepillar/vim-solarized8'
+
+" NERDtree
+Plugin 'preservim/nerdtree'
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
@@ -51,6 +54,9 @@ Plugin 'lifepillar/vim-solarized8'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+:command NERD NERDTreeToggle " NERDTreeFocus
+
 filetype plugin indent on    " required
 " " To ignore plugin indent changes, instead use:
 " "filetype plugin on
@@ -65,7 +71,14 @@ filetype plugin indent on    " required
 
 
 " QOL Improvements from Cole, Xianmeng
-set nu " Add line numbers
+set number relativenumber " Add line numbers
+
+augroup numbertoggle " switching between line numbers and relativenumber
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 set mouse=a " Allow mouse control
 set encoding=utf-8
 
