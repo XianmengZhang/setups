@@ -1,16 +1,16 @@
 # setups
 My flavor of setups for many things
 ## some helps for learning Vim
-t: Open the selected file in a new tab
-i: Open the selected file in a horizontal split window
-    t: Open the selected file in a new tab
-    i: Open the selected file in a horizontal split window
-    s: Open the selected file in a vertical split window
-    I: Toggle hidden files
-    m: Show the NERD Tree menu
-    R: Refresh the tree, useful if files change outside of Vim
-    ?: Toggle NERD Tree's quick helps: Open the selected file in a vertical split window
-    I: Toggle hidden files
-    m: Show the NERD Tree menu
-    R: Refresh the tree, useful if files change outside of Vim
-    ?: Toggle NERD Tree's quick help
+### NERDTree
+t: Open the selected file in a new tab<br />
+T: Open the selected file in a new tab quietly<br />
+i: Open the selected file in a horizontal split window<br />
+s: Open the selected file in a vertical split window<br />
+I: Toggle hidden files<br />
+m: Show the NERD Tree menu<br />
+R: Refresh the tree, useful if files change outside of Vim<br />
+?: Toggle NERD Tree's quick help<br />
+### tabs
+":tabnew filename" open new tab<br />
+":tabm n" move current tab to index n<br />
+":tabm +-n" move current tab n tabs to the right/left<br />
